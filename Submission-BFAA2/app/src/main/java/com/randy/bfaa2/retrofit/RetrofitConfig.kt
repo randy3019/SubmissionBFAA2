@@ -12,7 +12,7 @@ object RetrofitConfig {
             .addInterceptor { chain ->
                 val original = chain.request()
                 val requestBuilder = original.newBuilder()
-                    .header("Authorization","27c26bbe0151f256bff831101aa8e38281dfe6ef")
+                    .header("Authorization","Github")
                 val request = requestBuilder.build()
                 chain.proceed(request)
             }
